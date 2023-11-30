@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   //selector:'.app-servers',
@@ -11,7 +12,7 @@ import { Component } from '@angular/core';
 export class ServersComponent {
   allowNewServer = false;
   serverCreationsStatus = 'No Server Created';
-  serverName = ''
+  serverName = 'Test Server'
   constructor () {
     setTimeout(() => {
       this.allowNewServer = true;
