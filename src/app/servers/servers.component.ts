@@ -16,6 +16,8 @@ export class ServersComponent {
   // userName = ''
   serverCreated = false;
   servers = ['server', 'server 2']
+  showSecret = false
+  log = []
 
   constructor () {
     setTimeout(() => {
@@ -32,4 +34,9 @@ export class ServersComponent {
   onUpdateServerName (event: InputEvent) {
     this.serverName = (<HTMLInputElement>event.target).value
   }
+
+  onClick () {
+    this.showSecret = !this.showSecret
+    this.log.push(this.log.length + 1)
+}
 }
