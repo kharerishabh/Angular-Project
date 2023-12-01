@@ -1,13 +1,33 @@
 <label>Server Name</label>
+
 <!-- Event Binding
 <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
+
 <!-- Two Way Data Binding -->
-<input type="text" class="form-control" [(ngModel)]="serverName">
+<input type="text" class="form-control" [(ngModel)]="serverName" />
 <!-- <p>{{serverName}}</p> -->
-<input type="text" class="form-control" [(ngModel)]="userName">
-<p>{{userName}}</p>
-<button class="btn btn-primary" [disabled]="userName === ''" (click)="userName = ''">Reset User</button>
-<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateSevers()">Add Server</button>
-<p>{{serverCreationsStatus}}</p>
+
+<!-- Assigment 2 of Udemy Trainer -->
+<!-- <input type="text" class="form-control" [(ngModel)]="userName" />
+<p>{{ userName }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="userName === ''"
+  (click)="userName = ''"
+>
+  Reset User
+</button> -->
+
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateSevers()"
+>
+  Add Server
+</button>
+<!-- <p>{{ serverCreationsStatus }}</p> -->
+
+<!-- Using NG If -->
+<p *ngIf="serverCreated">Server was created, server name is {{serverName}}</p>
 <app-server></app-server>
 <app-server></app-server>
