@@ -13,6 +13,7 @@ export class ServersComponent {
   allowNewServer = false;
   serverCreationsStatus = 'No Server Created';
   serverName = 'Test Server'
+  userName = ''
   constructor () {
     setTimeout(() => {
       this.allowNewServer = true;
@@ -25,5 +26,9 @@ export class ServersComponent {
 
   onUpdateServerName (event: InputEvent) {
     this.serverName = (<HTMLInputElement>event.target).value
+  }
+
+  onResetUser () {
+    this.userName = ''
   }
 }
