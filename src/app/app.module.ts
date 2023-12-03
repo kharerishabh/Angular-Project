@@ -5,10 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ServerComponent, ServersComponent
+    AppComponent, ServerComponent, ServersComponent, ErrorComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule
