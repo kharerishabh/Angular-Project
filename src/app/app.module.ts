@@ -6,10 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { ErrorComponent } from './error/error.component';
+import { GamecontrolComponent } from './gamecontrol/gamecontrol.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ServerComponent, ServersComponent, ErrorComponent
+    AppComponent, ServerComponent, ServersComponent, ErrorComponent, GamecontrolComponent, OddComponent, EvenComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule

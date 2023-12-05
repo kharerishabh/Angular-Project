@@ -12,3 +12,14 @@
 <div>
   <app-error></app-error>
 </div>
+<div class="row">
+  <div class="col-xs-12">
+    <app-gamecontrol (intervalFired)="onIntervalFired($event)"></app-gamecontrol>
+  </div>
+  <div class="ror">
+    <div class="col-xs-12">
+      <app-odd *ngFor="let odd of oddNumber" [number]="odd"></app-odd>
+      <app-even *ngFor="let even of evenNumber" [number]="even"></app-even>
+    </div>
+  </div>
+</div>
