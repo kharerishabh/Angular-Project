@@ -9,15 +9,21 @@ import { ErrorComponent } from './error/error.component';
 import { GamecontrolComponent } from './gamecontrol/gamecontrol.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
+import { BasicHightLightDirective } from './basic-highlight/basic-highlight.directive';
 
 @NgModule({
   declarations: [
-    AppComponent, ServerComponent, ServersComponent, ErrorComponent, GamecontrolComponent, OddComponent, EvenComponent
+    AppComponent,
+    ServerComponent,
+    ServersComponent,
+    ErrorComponent,
+    GamecontrolComponent,
+    OddComponent,
+    EvenComponent,
+    BasicHightLightDirective
   ],
-  imports: [
-    BrowserModule, FormsModule, HttpClientModule
-  ],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
