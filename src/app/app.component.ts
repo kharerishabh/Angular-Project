@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   oddNumber: number[] = [];
   evenNumber: number[] = [];
+  value = 5;
 
   onIntervalFired (firedNumber: number) {
     if(firedNumber % 2 === 0){
