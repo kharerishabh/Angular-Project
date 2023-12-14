@@ -11,6 +11,7 @@ import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
 import { BasicHightLightDirective } from './basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
+import { UnlessDirective } from './structural-directive/unless.directive';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { BetterHighlightDirective } from './better-highlight/better-highlight.di
     OddComponent,
     EvenComponent,
     BasicHightLightDirective,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    UnlessDirective
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
